@@ -1,70 +1,71 @@
 import React from 'react'
 import Card from './Components/Card'
 import ProductCard from './Components/productCard'
+import IceCreamCard from './Components/IceCreamCard'
 
 const App = () => {
-  const data = [
-  {
-    "name": "Orange Juice",
-    "photo": "https://i.pinimg.com/736x/84/7f/59/847f5915abbfa9ca2a8086e6cffd085f.jpg",
-    "ingredients": ["Orange", "Water", "Sugar"],
-    "price": 3.50
-  },
-  {
-    "name": "Apple Juice",
-    "photo": "https://i.pinimg.com/736x/3f/58/0b/3f580b80e7bc6b7c1304d0a4dda2f641.jpg",
-    "ingredients": ["Apple", "Water", "Lemon"],
-    "price": 3.00
-  },
-  {
-    "name": "Mango Juice",
-    "photo": "https://i.pinimg.com/736x/46/26/10/4626100dd4080ce1802ca4e04a0689d4.jpg",
-    "ingredients": ["Mango", "Milk", "Sugar"],
-    "price": 4.00
-  },
-  {
-    "name": "Pineapple Juice",
-    "photo": "https://i.pinimg.com/736x/d7/cc/35/d7cc358d77528fbf102fabbba9fbf58f.jpg",
-    "ingredients": ["Pineapple", "Water", "Honey"],
-    "price": 3.75
-  },
-  {
-    "name": "Strawberry Juice",
-    "photo": "https://i.pinimg.com/736x/5e/4a/da/5e4ada4cec3760986d720031dc463bcf.jpg",
-    "ingredients": ["Strawberry", "Water", "Sugar"],
-    "price": 4.25
-  },
-  {
-    "name": "Watermelon Juice",
-    "photo": "https://i.pinimg.com/736x/36/de/eb/36deeb56c368985e33c72f719e560777.jpg",
-    "ingredients": ["Watermelon", "Mint", "Lime"],
-    "price": 3.20
-  },
-  {
-    "name": "Carrot Juice",
-    "photo": "https://i.pinimg.com/736x/1a/6e/de/1a6ede671dfceea2df241f6fd42cfb8f.jpg",
-    "ingredients": ["Carrot", "Ginger", "Lemon"],
-    "price": 3.10
-  },
-  {
-    "name": "Mixed Fruit Juice",
-    "photo": "https://i.pinimg.com/736x/93/66/b7/9366b7009eb0e451d50c7c857567176a.jpg",
-    "ingredients": ["Orange", "Banana", "Orange"],
-    "price": 4.50
-  },
-  {
-    "name": "Pomegranate Juice",
-    "photo": "https://i.pinimg.com/736x/90/97/04/909704d13bddfcef40e97edf394f4dcc.jpg",
-    "ingredients": ["Pomegranate", "Water", "Honey"],
-    "price": 4.80
-  },
-  {
-    "name": "Kiwi Juice",
-    "photo": "https://i.pinimg.com/1200x/28/e0/8a/28e08acc915861b708eea4275c25e7a1.jpg",
-    "ingredients": ["Kiwi", "Apple", "Lime"],
-    "price": 4.10
-  }
-]
+//   const data = [
+//   {
+//     "name": "Orange Juice",
+//     "photo": "https://i.pinimg.com/736x/84/7f/59/847f5915abbfa9ca2a8086e6cffd085f.jpg",
+//     "ingredients": ["Orange", "Water", "Sugar"],
+//     "price": 3.50
+//   },
+//   {
+//     "name": "Apple Juice",
+//     "photo": "https://i.pinimg.com/736x/3f/58/0b/3f580b80e7bc6b7c1304d0a4dda2f641.jpg",
+//     "ingredients": ["Apple", "Water", "Lemon"],
+//     "price": 3.00
+//   },
+//   {
+//     "name": "Mango Juice",
+//     "photo": "https://i.pinimg.com/736x/46/26/10/4626100dd4080ce1802ca4e04a0689d4.jpg",
+//     "ingredients": ["Mango", "Milk", "Sugar"],
+//     "price": 4.00
+//   },
+//   {
+//     "name": "Pineapple Juice",
+//     "photo": "https://i.pinimg.com/736x/d7/cc/35/d7cc358d77528fbf102fabbba9fbf58f.jpg",
+//     "ingredients": ["Pineapple", "Water", "Honey"],
+//     "price": 3.75
+//   },
+//   {
+//     "name": "Strawberry Juice",
+//     "photo": "https://i.pinimg.com/736x/5e/4a/da/5e4ada4cec3760986d720031dc463bcf.jpg",
+//     "ingredients": ["Strawberry", "Water", "Sugar"],
+//     "price": 4.25
+//   },
+//   {
+//     "name": "Watermelon Juice",
+//     "photo": "https://i.pinimg.com/736x/36/de/eb/36deeb56c368985e33c72f719e560777.jpg",
+//     "ingredients": ["Watermelon", "Mint", "Lime"],
+//     "price": 3.20
+//   },
+//   {
+//     "name": "Carrot Juice",
+//     "photo": "https://i.pinimg.com/736x/1a/6e/de/1a6ede671dfceea2df241f6fd42cfb8f.jpg",
+//     "ingredients": ["Carrot", "Ginger", "Lemon"],
+//     "price": 3.10
+//   },
+//   {
+//     "name": "Mixed Fruit Juice",
+//     "photo": "https://i.pinimg.com/736x/93/66/b7/9366b7009eb0e451d50c7c857567176a.jpg",
+//     "ingredients": ["Orange", "Banana", "Orange"],
+//     "price": 4.50
+//   },
+//   {
+//     "name": "Pomegranate Juice",
+//     "photo": "https://i.pinimg.com/736x/90/97/04/909704d13bddfcef40e97edf394f4dcc.jpg",
+//     "ingredients": ["Pomegranate", "Water", "Honey"],
+//     "price": 4.80
+//   },
+//   {
+//     "name": "Kiwi Juice",
+//     "photo": "https://i.pinimg.com/1200x/28/e0/8a/28e08acc915861b708eea4275c25e7a1.jpg",
+//     "ingredients": ["Kiwi", "Apple", "Lime"],
+//     "price": 4.10
+//   }
+// ]
 
     // const product = [
     //                   {
@@ -148,19 +149,119 @@ const App = () => {
     //                     "details": "High-capacity power bank with fast charging support."
     //                   }
     //                 ]
+
+    const icecream_data = [
+  {
+    "image": "https://i.pinimg.com/1200x/e1/60/4f/e1604fefcae1a04721f7c78a9821dc0c.jpg",
+    "name": "Vanilla Delight",
+    "ingredients": ["Milk", "Vanilla Extract", "Sugar"],
+    "detail": "Classic creamy vanilla ice cream with a smooth texture and rich flavor.",
+    "toppings": ["Chocolate Syrup", "Almond Flakes"],
+    "price": 120,
+    "delivery_charge": 3
+  },
+  {
+    "image": "https://i.pinimg.com/736x/07/6f/58/076f58cca901af486c8c3f617819b791.jpg",
+    "name": "Chocolate Blast",
+    "ingredients": ["Cocoa", "Cream", "Sugar"],
+    "detail": "Rich chocolate ice cream loaded with deep cocoa flavor.",
+    "toppings": ["Choco Chips", "Brownie Crumbs"],
+    "price": 150,
+    "delivery_charge": 4
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/d6/ee/bc/d6eebc69f3a1fbed7444fa5d236622ba.jpg",
+    "name": "Strawberry Swirl",
+    "ingredients": ["Strawberries", "Milk", "Sugar"],
+    "detail": "Sweet strawberry ice cream with a refreshing fruity swirl.",
+    "toppings": ["Strawberry Sauce", "Whipped Cream"],
+    "price": 140,
+    "delivery_charge": 2
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/c7/6d/70/c76d70e7a698683b8ff9687470a2253f.jpg",
+    "name": "Mango Magic",
+    "ingredients": ["Mango Pulp", "Cream", "Sugar"],
+    "detail": "Tropical mango ice cream made from ripe juicy mangoes.",
+    "toppings": ["Mango Cubes", "Coconut Flakes"],
+    "price": 160,
+    "delivery_charge": 3
+  },
+  {
+    "image": "https://i.pinimg.com/736x/00/2a/98/002a98b9dc8f3cd6eaefb9f1fa02209a.jpg",
+    "name": "Cookies & Cream",
+    "ingredients": ["Milk", "Oreo Cookies", "Cream"],
+    "detail": "Smooth vanilla base mixed with crunchy cookie chunks.",
+    "toppings": ["Crushed Cookies", "Chocolate Drizzle"],
+    "price": 170,
+    "delivery_charge": 8
+  },
+  {
+    "image": "https://i.pinimg.com/736x/02/15/e7/0215e731277f6b993158246dcad0f8f9.jpg",
+    "name": "Pista Paradise",
+    "ingredients": ["Pistachios", "Milk", "Sugar"],
+    "detail": "Traditional pistachio ice cream with nutty richness.",
+    "toppings": ["Pista Crumbles", "Honey Drizzle"],
+    "price": 180,
+    "delivery_charge": 9
+  },
+  {
+    "image": "https://i.pinimg.com/736x/48/32/36/4832362b729a06eaa406b92dee8c6c7b.jpg",
+    "name": "Butterscotch Crunch",
+    "ingredients": ["Butterscotch Syrup", "Milk", "Cream"],
+    "detail": "Creamy butterscotch ice cream with crunchy caramel bits.",
+    "toppings": ["Caramel Sauce", "Butterscotch Chips"],
+    "price": 160,
+    "delivery_charge": 5
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/74/0f/ff/740fff9181cde733c36e53eb8dff4435.jpg",
+    "name": "Blackcurrant Bliss",
+    "ingredients": ["Blackcurrant", "Milk", "Sugar"],
+    "detail": "Tangy and sweet blackcurrant ice cream with vibrant flavor.",
+    "toppings": ["Berry Sauce", "Mint Leaves"],
+    "price": 155,
+    "delivery_charge": 8
+  },
+  {
+    "image": "https://i.pinimg.com/736x/80/b4/17/80b417f5345c0824af0f0dd72fa95728.jpg",
+    "name": "Coffee Caramel",
+    "ingredients": ["Coffee", "Cream", "Sugar"],
+    "detail": "Bold coffee ice cream blended with smooth caramel sweetness.",
+    "toppings": ["Caramel Drizzle", "Choco Chips"],
+    "price": 175,
+    "delivery_charge": 6
+  },
+  {
+    "image": "https://i.pinimg.com/736x/86/70/5c/86705c32eb698bf7e838851e462e18cf.jpg",
+    "name": "Blueberry Dream",
+    "ingredients": ["Blueberries", "Milk", "Sugar"],
+    "detail": "Refreshing blueberry ice cream with natural fruity taste.",
+    "toppings": ["Blueberry Sauce", "Whipped Cream"],
+    "price": 165,
+    "delivery_charge": 4
+  }
+]
+
   return (
     <> 
-           <section className='flex flex-wrap gap-6 px-8 py-4 justify-center items-center'> 
+           {/* <section className='flex flex-wrap gap-6 px-8 py-4 justify-center items-center'> 
               {data.map(function(juice){
                 return <Card data={juice}/> ;
               })}
-            </section>   
+            </section>    */}
 
     {/* <section className='flex items-center flex-wrap py-4 px-6 gap-6 justify-center'>
       {product.map(function (data){
         return <ProductCard data={data}/>
       })}
     </section> */}
+
+     <section className="flex item-center flex-wrap py-4 px-6 justify-center gap-5">
+          {icecream_data.map(function (data) {
+              return <IceCreamCard data={data} />;
+          })}
+       </section> 
 
     </>
   )
