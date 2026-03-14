@@ -6,6 +6,8 @@ body{
   margin-top: 50px;
   margin-left: 50px;
   box-sizing: border-box;
-  background-color: rgb(160, 145, 145);
+  background-image: url("https://i.pinimg.com/736x/b0/95/56/b09556af1df6a9d62d800e68bd64262f.jpg");
+
+  /* background-color: rgb(160, 145, 145); */
   color: rgb(0, 0, 0);
 }

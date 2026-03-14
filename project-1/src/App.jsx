@@ -257,7 +257,7 @@ const App = () => {
       })}
     </section> */}
 
-     <section className="flex item-center flex-wrap py-4 px-6 justify-center gap-5">
+     <section className="flex item-center flex-wrap py-4 px-6 justify-center gap-15">
           {icecream_data.map(function (data) {
               return <IceCreamCard data={data} />;
           })}
