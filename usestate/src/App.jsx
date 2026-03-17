@@ -8,9 +8,9 @@ const App = () => {
     <>
       {/* <IncreAnddecre /> */}
 
-      {/* <ChangeUser /> */}
+      <ChangeUser />
 
-      <AddUser />
+      {/* <AddUser /> */}
     </>
   )
 }
