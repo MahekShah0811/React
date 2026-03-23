@@ -4,6 +4,7 @@ import { Focus, Search } from "lucide-react";
 const NavBar = () => {
   return (
     <>
+      {/* Part 1 */}
       <div className="flex px-6 justify-between items-center">
         {/* Navbar With Search Bar */}
         <div className="bg-gray-200 px-3 py-1.5 flex items-center justify-between gap-x-2 rounded-full w-[75%]">
@@ -25,6 +26,7 @@ const NavBar = () => {
         </div>
       </div>
 
+      {/* Part 2 */}
       <nav className="border-b border-gray-400 w-full">
         <ul className="list-none flex items-center justify-between w-[70%] my-4 px-6 text-sm text-gray-400 font-medium">
           <li className="text-black">Featured</li>
