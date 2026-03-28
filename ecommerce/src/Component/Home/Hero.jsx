@@ -15,22 +15,17 @@ const Hero = () => {
           </div>
 
           {/* title */}
-          <h1 className="md:text-3xl  text-2xl font-medium xl:leading-relaxed leading-normal text-nowrap">
-            Step into Style : Your
-            
-
-            Ultimate Fashion Destination
+          <h1 className="md:text-3xl mt-4 text-2xl font-medium xl:leading-relaxed leading-normal text-nowrap">
+            Step into Style : Your Ultimate Fashion Destination
           </h1>
 
           {/* description */}
-          <p className="text-lg md:text-xl  font-noraml leading-normal text-black/60">
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ab  
- vel nihil quaerat illum qui? Natus.
+          <p className="text-lg md:text-xl mt-3 font-normal leading-normal text-black/60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel nihil quaerat illum qui? Natus.
           </p>
 
           {/* button */}
-          <button className="bg-[#583101] flex items-center justify-center text-white px-6 py-3 my-4 gap-x-4 active:scale-95  active:rounded-md">
+          <button className="bg-[#583101] flex items-center justify-center text-white px-6 py-3 my-4 gap-x-4 rounded-3xl active:scale-95 active:rounded-md">
             Show Now <ArrowRight />
           </button>
         </div>

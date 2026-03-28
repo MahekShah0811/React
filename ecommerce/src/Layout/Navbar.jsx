@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
       <section>
         {/* Desktop Navbar */}
-        <nav className='bg-white px-8 py-4 w-full h-auto hidden md:flex items-center justify-between'>
+        <nav className='bg-white px-8 w-full h-auto hidden md:flex items-center justify-between'>
             
             {/* Logo */}
             <div className='flex justify-center items-center gap-x-2'>
