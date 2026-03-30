@@ -8,10 +8,10 @@ const ProductCard = ({ product_data }) => {
   return (
     <div className="max-w-80 bg-white group cursor-pointer">
       {/* Image Container */}
-      <div className="relative aspect-4/5 overflow-hidden bg-[#f3f3f3]">
+      <div className="relative rounded-2xl aspect-4/5 overflow-hidden bg-[#f3f3f3]">
         {/* Discount Badge */}
-        <div className="absolute top-4 left-4 bg-white px-3 py-1 shadow-sm">
-          <span className="text-[#4db195] text-xs font-bold">
+        <div className="absolute top-4 left-4 bg-green-100 rounded-md px-2 py-0.5 shadow-md">
+          <span className="text-green-800 text-xs font-bold">
             {product_data.discountPercentage}% off
           </span>
         </div>
@@ -25,7 +25,7 @@ const ProductCard = ({ product_data }) => {
 
       {/* Content Section */}
       <div className="pt-4 pb-2">
-        <div className="flex justify-between items-center text-gray-400 text-sm">
+        <div className="flex justify-between items-center capitalize text-gray-400 text-sm">
           <span>{product_data.category}</span>
           <div className="flex items-center gap-1 text-black font-medium">
             <Star size={14} fill="#ffc107" stroke="none" />
@@ -49,4 +49,3 @@ const ProductCard = ({ product_data }) => {
 };
 
 export default ProductCard;
- 

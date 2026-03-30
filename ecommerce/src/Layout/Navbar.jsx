@@ -1,6 +1,7 @@
 import React from 'react'
 import { Search, Heart, ShoppingBag, User2, Menu, X } from "lucide-react"
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -20,10 +21,11 @@ const NavBar = () => {
 
             {/* Links */}
             <ul className='flex items-center justify-center gap-x-4 text-lg font-normal'>
-                <li><a href="">Home</a></li>
-                <li><a href="">Collection</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/collection">Collection</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
 
             {/* icons */}
@@ -71,10 +73,23 @@ const NavBar = () => {
 
                     {/* Links */}
                     <ul className='flex flex-col items-center justify-center gap-y-12 text-3xl font-semibold'>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Collection</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        
+                        <li><Link to="/collection">Collection</Link></li>
+                        
+                        <li>
+                            <Link to="/shop">Shop</Link>
+                        </li>
+                        
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
             </section>

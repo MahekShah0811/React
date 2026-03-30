@@ -24,17 +24,15 @@ const DealBar = () => {
 
   return (
     <>
-      <section className="px-10 w-[80%] mx-auto">
+      <section className="px-10 w-[92%] mx-auto">
         <div className="flex flex-col  justify-between my-6">
-          <h3 className="text-lg font-normal">Today Deals</h3>
+          <h3 className="text-lg md:text-xl text-gray-400 font-semibold max-md:text-center">Today Deals</h3>
           <div className="my-6 flex items-center justify-between">
-            <h1 className="font-semibold text-3xl">Deals Of the Day</h1>
-            <p className="text-md text-gray-400">
+            <h1 className="text-2xl md:text-4xl font-semibold md:py-2 text-nowrap max-md:text-center">Deals Of the Day</h1>
+            <span className="text-xl text-gray-900">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              
-
               dolor sit, amet consectetur adipisicing.
-            </p>
+            </span>
           </div>
         </div>
 

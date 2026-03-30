@@ -17,7 +17,7 @@ const DealCard = ({ productData }) => {
         />
 
         {/* Discount Badge */}
-        <span className="absolute top-2 left-2 bg-green-100 text-green-600 text-xs px-2 py-1 rounded-md font-semibold">
+        <span className="absolute top-2 left-2 bg-green-200 text-green-800 text-xs px-2 py-1 rounded-md font-semibold">
           {Math.floor(productData.discountPercentage)}% off
         </span>
       </div>
@@ -27,7 +27,7 @@ const DealCard = ({ productData }) => {
         {/* Top */}
         <div>
           <div className="flex justify-between items-start">
-            <h3 className="text-sm text-gray-500">{productData.category}</h3>
+            <h3 className="text-md capitalize text-gray-500">{productData.category}</h3>
             <Heart className="w-5 h-5 text-gray-400 cursor-pointer hover:text-red-500" />
           </div>
 
@@ -54,7 +54,7 @@ const DealCard = ({ productData }) => {
           </div>
 
           {/* Description */}
-          <p className="text-sm text-gray-500 mt-2">
+          <p className="text-md text-gray-500 mt-2">
             {productData.description.length > 50
               ? productData.description.slice(0, 50) + "..."
               : productData.description}
@@ -62,7 +62,7 @@ const DealCard = ({ productData }) => {
         </div>
 
         {/* Button */}
-        <button className="bottom-15 relative text-left text-[#582f0e] font-semibold">
+        <button className="bottom-18 relative text-left text-[#582f0e] font-semibold">
           Shop Now →
         </button>
       </div>
@@ -71,4 +71,3 @@ const DealCard = ({ productData }) => {
 };
 
 export default DealCard;
- 
